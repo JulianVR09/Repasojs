@@ -28,7 +28,20 @@ document.addEventListener("DOMContentLoaded",()=>{
         return Math.floor(Math.random() * 10000000000000000000);
     };
 
+    const root = document.getElementById('root');
+    root.innerHTML = `<div class="log-in">
+        <h1>Registrarse</h1>
+        <label for="name">Nombre: </label>
+        <input type="text" id="name" placeholder="Nombre">
+        <label for="age">Fecha de Nacimeitno: </label>
+        <input type="date" placeholder="Edad">
+        <label for="email">Correo Electrónico: </label>
+        <input type="email" id="email" placeholder="example@example.org">
+        <label for="password">Contraseña: </label>
+        <input type="password" id="password" autocompleted="none">
+        <button id="submit">Registrar</button>
+    </div>`
 
 
-
+    
 });
