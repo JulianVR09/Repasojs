@@ -1,3 +1,4 @@
+import { DashboardPage } from "./Pages/private/Dashboard";
 import { HomePage } from "./Pages/public/home";
 import { LoginPage } from "./Pages/public/login/LoginPage";
 import { NotFound } from "./Pages/public/NotFound";
@@ -11,6 +12,6 @@ export const routes = {
         {path: '/register', page: RegisterPage},
     ],
     private: [
-        {}
+        {path: '/dashboard', page: DashboardPage},
     ]
 };
